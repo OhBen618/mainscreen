@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Animation</title>
+    <style>
+        body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.content {
+    display: inline-flex;
+    align-items: center;
+    gap: 100px;
+}
+
+img {
+    width: 150px;
+    animation: pulse 1s infinite linear; /* linear timing function for even animation */
+}
+
+p {
+    font-size: 100px;
+    color: #333;
+}
+
+/* adjust image movement and add consistent scaling */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1.5); /* normal size */
+    }
+    50% {
+        transform: scale(2); /* enlarged size */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img id="animatedImage" src="met.png" alt="Sample Image">
+            <p id="text">meth factory</p>
+        </div>
+    </div>
+</body>
+</html>

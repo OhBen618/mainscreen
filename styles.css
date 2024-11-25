@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.content {
+    display: inline-flex;
+    align-items: center;
+    gap: 100px;
+}
+
+img {
+    width: 150px;
+    animation: pulse 1s infinite linear; /* linear timing function for even animation */
+}
+
+p {
+    font-size: 100px;
+    color: #333;
+}
+
+/* adjust image movement and add consistent scaling */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1.5); /* normal size */
+    }
+    50% {
+        transform: scale(2); /* enlarged size */
+    }
+}
